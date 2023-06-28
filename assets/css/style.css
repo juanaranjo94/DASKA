@@ -47,7 +47,11 @@ html {
 .bg-naranja { background-color: #f58634;}
 .bg-morado { background-color: #8a4372;}
 .bg-verde { background-color: #a8cf45;}
-
+.bg-blue { background-color: #00AFEF;}
+.bg-red { background-color: #ED3237;}
+.bg-green { background-color: #00A859;}
+.bg-violeta { background-color: #B82584; }
+.bg-grey { background-color: #727376; }
 
 body {
   font-family: "Hind", sans-serif;
@@ -2632,7 +2636,12 @@ img {
   background: url("../images/seo/services/services-bg-2.jpg") center center/cover
     no-repeat fixed;
   position: relative;
-  padding-bottom: 100px;
+
+}
+
+.service-grids {
+      display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 991px) {
@@ -2647,7 +2656,17 @@ img {
   }
 }
 
-.seo-home .seo-services-section:before {
+.seo-home .daska:before {
+  content: "";
+  background-color: rgb(138, 67, 114, 0.9);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.seo-home .didaktiko:before {
   content: "";
   background-color: rgba(168, 207, 69, 0.9);
   width: 100%;
@@ -3248,7 +3267,6 @@ img {
 --------------------------------------------------------------*/
 .seo-testimonials-section .testimonials-grids .grid {
   position: relative;
-  padding-left: 185px;
   min-height: 175px;
 }
 
@@ -3383,8 +3401,9 @@ img {
 /*--------------------------------------------------------------
 #17.7 seo-projects-section
 --------------------------------------------------------------*/
+
 .seo-projects-section {
-  background-color: #f8f8f8;
+padding: 60px 0 0 0;
 }
 
 .seo-projects-section .construction-projects-grids {
@@ -3519,8 +3538,12 @@ img {
   background-color: #e4e7f0;
 }
 
-.seo-projects-section .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
-  background-color: #8a4372;
+.daska .seo-projects-section .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #5d2e4d;
+}
+
+.didaktiko .seo-projects-section .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background-color: #82a036;
 }
 
 @media (max-width: 550px) {
@@ -3544,9 +3567,19 @@ img {
 /*--------------------------------------------------------------
 #17.9 seo-blog-section
 --------------------------------------------------------------*/
+
+
+.seo-blog-section .news-grids {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.seo-blog-section .grid {
+  padding-bottom: 40px;
+}
+
 .seo-blog-section > .container {
-  padding: 110px 15px;
-  border-top: 1px solid #dddddd;
+  padding: 50px 15px;
 }
 
 @media (max-width: 991px) {
